@@ -1,0 +1,30 @@
+.justify-right {
+  justify-self: right;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.block {
+  display: block;
+}
+
+.hashtags {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.hashtag {
+  margin-right: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-grey-dark);
+  border: 1px solid #D6D6D6;
+  border-radius: 1.5rem;
+  padding: .1rem 2rem;
+}
+
+.no-padding {
+  padding: 0;
+}

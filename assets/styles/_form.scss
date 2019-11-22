@@ -1,0 +1,71 @@
+.form {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  &__input {
+    background: var(--color-white);
+    border: 1px solid #d3d3d3;
+    border-radius: 1rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.6rem;
+
+    &::placeholder {
+      font-size: 1.4rem;
+    }
+
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &__checkbox {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-white);
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:checked {
+      background-color: var(--color-yellow);
+      border: none;
+
+      &:after {
+        content: '';
+        display: block;
+        width: .5rem;
+        height: .9rem;
+        border: solid #000;
+        border-width: 0 1.5px 1.5px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__agreement {
+    grid-column: 1 / -1;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+}
+

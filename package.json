@@ -1,0 +1,31 @@
+{
+  "name": "refill-nuxt",
+  "version": "1.0.0",
+  "description": "My sensational Nuxt.js project",
+  "author": "olegjakunin",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.0.0",
+    "nuxt-responsive-loader": "^1.0.4",
+    "nuxt-svg-loader": "^1.0.1",
+    "nuxt-webfontloader": "^1.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0"
+  }
+}

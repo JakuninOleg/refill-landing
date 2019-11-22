@@ -1,0 +1,48 @@
+.description {
+  padding: 8rem 0 3rem 5rem;
+  max-width: 114rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 3rem;
+
+  &__header {
+    grid-column: 1 / 11;
+  }
+
+  &__body {
+    grid-column: 1 / -1;
+    position: relative;
+  }
+
+  &__list {
+    list-style: none;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__list-item {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    
+
+    &--bold {
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__list-span {
+    margin-left: 2rem;
+  }
+
+  &__image {
+    width: 80rem;
+    position: absolute;
+    transform: translate(75%, -100%);
+    z-index: 0;
+  }
+}

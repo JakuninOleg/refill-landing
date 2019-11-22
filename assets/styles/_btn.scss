@@ -1,0 +1,26 @@
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  border: none;
+  font-family: "Open sans";
+  font-size: 1.7rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-grey-dark);
+  }
+
+  &--red {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    padding: 1.5rem 10rem;
+  }
+}
