@@ -6,9 +6,9 @@
 
     <Description />
 
-    <FormApplication />
+    <FormApplication ref="form" />
 
-    <section class="conditions" />
+    <Conditions />
 
     <section class="form-feedback" />
 
@@ -21,6 +21,7 @@
 <script>
 import Navigation from '~/components/Navigation.vue'
 import Header from '~/components/Header.vue'
+import Conditions from '~/components/Conditions.vue'
 import Description from '~/components/Description.vue'
 import FormApplication from '~/components/FormApplication.vue'
 
@@ -29,7 +30,8 @@ export default {
     Navigation,
     Header,
     Description,
-    FormApplication
+    FormApplication,
+    Conditions
   }
 }
 </script>

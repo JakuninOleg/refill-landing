@@ -1,0 +1,59 @@
+<template>
+  <section class="section conditions">
+    <div class="section__content">
+      <h3 class="heading-3">
+        Условия займа под залог автомобиля
+      </h3>
+      <div class="hashtags">
+        <span class="hashtag">#деньгивыгодно</span>
+        <span class="hashtag">#лучшее</span>
+        <span class="hashtag">#деньгиподавто</span>
+      </div>
+      <div class="conditions__icons">
+        <span class="conditions__icon-box">
+          <Accept clas="conditions__icon"/>
+        </span>
+        <span class="conditions__icon-box">
+          <Calendar clas="conditions__icon"/>
+        </span>
+        <span class="conditions__icon-box">
+          <Car clas="conditions__icon"/>
+        </span>
+        <span class="conditions__icon-box">
+          <Crash clas="conditions__icon"/>
+        </span>
+        <span class="conditions__icon-box">
+          <Document clas="conditions__icon"/>
+        </span>
+        <span class="conditions__icon-box">
+          <Passport clas="conditions__icon"/>
+        </span>
+      </div>
+      <img
+        :srcset="require('~/assets/images/car.png').srcSet"
+        alt="Автомобиль"
+        class="conditions__image"
+      >
+    </div>
+  </section>
+</template>
+
+<script>
+import Accept from '@/assets/icons/Accept.svg'
+import Calendar from '@/assets/icons/Calendar.svg'
+import Car from '@/assets/icons/Car.svg'
+import Crash from '@/assets/icons/Crash.svg'
+import Document from '@/assets/icons/Document.svg'
+import Passport from '@/assets/icons/Passport.svg'
+
+export default {
+  components: {
+    Accept,
+    Calendar,
+    Car,
+    Crash,
+    Document,
+    Passport
+  }
+}
+</script>

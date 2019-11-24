@@ -13,7 +13,7 @@
           <span class="block">до 100 литров бензина</span>
           <span class="header__text--pts">+ деньги под птс</span>
         </h2>
-        <Button class="btn header__btn btn--red">
+        <Button @click.native="scrollToForm" class="btn header__btn btn--red">
           Получить
         </Button>
       </div>
@@ -28,6 +28,11 @@ import Button from '~/components/Button.vue'
 export default {
   components: {
     Button
+  },
+  methods: {
+    scrollToForm () {
+      this.$parent.$refs.form.$el.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    }
   }
 }
 </script>

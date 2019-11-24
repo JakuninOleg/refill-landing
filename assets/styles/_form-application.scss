@@ -1,14 +1,4 @@
 .form-application {
-  background: var(--color-white-dark);
-
-  &__content {
-    max-width: 114rem;
-    margin: 0 auto;
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
-    // grid-gap: 3rem;
-    padding: 5rem;
-  }
 
   &__step {
     padding-top: 3rem;

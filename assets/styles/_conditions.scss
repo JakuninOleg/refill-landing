@@ -1,0 +1,20 @@
+.conditions {
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(3, 27.5rem);
+    grid-gap: 3rem;
+    justify-items: center;
+    padding-top: 5rem;
+  }
+
+  &__icon-box {
+    border-radius: 50%;
+    background-color: var(--color-grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+  }
+}

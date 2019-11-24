@@ -1,6 +1,6 @@
 <template>
-  <section class="form-application">
-    <div class="form-application__content">
+  <section class="section section__grey">
+    <div class="section__content">
       <header>
         <h3 class="heading-3">
           Быстрое получение денег под Залог ПТС
@@ -18,15 +18,7 @@
             class="form-application__step-text"
           >Отправьте заявку и получите предварительное одобрение по телефону</span>
         </div>
-        <form class="form">
-          <input type="text" class="form__name form__input" placeholder="Ваше имя">
-          <input type="text" class="form__phone form__input" placeholder="Ваш телефон">
-          <Button class="btn btn--red no-padding">Отправить заявку</Button>
-          <div class="form__agreement">
-            <input type="checkbox" checked class="form__checkbox"><span class="tick"></span><span class="grey-dark checkbox-span">Нажимая кнопку, вы даете свое согласие на обработку и хранение своих&nbsp;</span>
-            <span><a class="hyperlink" href="https://zdeslegko.ru/static/documents/politics.pdf" target="blank">персональных данных.</a></span>
-          </div>
-        </form>
+        <Form />
         <div class="form-application__step">
           <span class="form-application__step-number">2</span>
           <span
@@ -43,11 +35,11 @@
 </template>
 
 <script>
-import Button from '~/components/Button.vue'
+import Form from '~/components/Form.vue'
 
 export default {
   components: {
-    Button
+    Form
   }
 }
 </script>
