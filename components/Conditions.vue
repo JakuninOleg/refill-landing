@@ -9,25 +9,43 @@
         <span class="hashtag">#лучшее</span>
         <span class="hashtag">#деньгиподавто</span>
       </div>
+      <div class="conditions__icons-item">
+        <span class="conditions__icon-box">
+          <Passport clas="conditions__icon" />
+        </span>
+        <p>Гражданство РФ, возраст 21–70 лет</p>
+      </div>
+      <div class="conditions__icons-item">
+        <span class="conditions__icon-box">
+          <Calendar clas="conditions__icon" />
+        </span>
+        <p>Срок – до 36 месяцев</p>
+      </div>
       <div class="conditions__icons">
+        <div class="conditions__icons-item">
+          <span class="conditions__icon-box">
+            <Accept clas="conditions__icon" />
+          </span>
+        </div>
+        <p>Досрочное погашение без переплаты и штрафов</p>
+      </div>
+      <div class="conditions__icons-item">
         <span class="conditions__icon-box">
-          <Accept clas="conditions__icon"/>
+          <Car clas="conditions__icon" />
         </span>
+        <p>Год выпуска авто – не старше 15 лет, регистрация РФ</p>
+      </div>
+      <div class="conditions__icons-item">
         <span class="conditions__icon-box">
-          <Calendar clas="conditions__icon"/>
+          <Document clas="conditions__icon" />
         </span>
+        <p>Документы для оформления: паспорт, СТС, ПТС, нотариальная доверенность РФ (если не собственник)</p>
+      </div>
+      <div class="conditions__icons-item">
         <span class="conditions__icon-box">
-          <Car clas="conditions__icon"/>
+          <Crash clas="conditions__icon" />
         </span>
-        <span class="conditions__icon-box">
-          <Crash clas="conditions__icon"/>
-        </span>
-        <span class="conditions__icon-box">
-          <Document clas="conditions__icon"/>
-        </span>
-        <span class="conditions__icon-box">
-          <Passport clas="conditions__icon"/>
-        </span>
+        <p>Состояние автомобиля – без сильных повреждений, технически исправным</p>
       </div>
       <img
         :srcset="require('~/assets/images/car.png').srcSet"
