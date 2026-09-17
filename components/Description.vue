@@ -49,7 +49,7 @@
       </article>
     </div>
     <img
-      :srcset="require('~/assets/images/hose.png').srcSet"
+      :src="require('~/assets/images/hose.png')"
       alt="Шланг"
       class="description__image"
     >

@@ -17,7 +17,7 @@
           Получить
         </Button>
       </div>
-      <img :srcset="require('~/assets/images/gauge.png').srcSet" alt="Спидометр" class="header__image">
+      <img :src="require('~/assets/images/gauge.png')" alt="Спидометр" class="header__image">
     </div>
   </header>
 </template>

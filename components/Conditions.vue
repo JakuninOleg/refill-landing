@@ -48,7 +48,7 @@
         <p>Состояние автомобиля – без сильных повреждений, технически исправным</p>
       </div>
       <img
-        :srcset="require('~/assets/images/car.png').srcSet"
+        :src="require('~/assets/images/car.png')"
         alt="Автомобиль"
         class="conditions__image"
       >
@@ -57,12 +57,12 @@
 </template>
 
 <script>
-import Accept from '@/assets/icons/Accept.svg'
-import Calendar from '@/assets/icons/Calendar.svg'
-import Car from '@/assets/icons/Car.svg'
-import Crash from '@/assets/icons/Crash.svg'
-import Document from '@/assets/icons/Document.svg'
-import Passport from '@/assets/icons/Passport.svg'
+import Accept from '@/assets/icons/accept.svg'
+import Calendar from '@/assets/icons/calendar.svg'
+import Car from '@/assets/icons/car.svg'
+import Crash from '@/assets/icons/crash.svg'
+import Document from '@/assets/icons/document.svg'
+import Passport from '@/assets/icons/passport.svg'
 
 export default {
   components: {

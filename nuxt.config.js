@@ -1,9 +1,6 @@
-
 export default {
-  mode: 'universal',
-  /*
-  ** Headers of the page
-  */
+  target: 'static',
+  ssr: true,
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -15,53 +12,30 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
   css: [
     '@/assets/styles/main.scss'
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
-  ],
-  /*
-  ** Nuxt.js modules
-  */
+  plugins: [],
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    'nuxt-webfontloader',
     'nuxt-svg-loader',
-    'nuxt-responsive-loader'
+    '@nuxtjs/axios',
+    'nuxt-webfontloader'
   ],
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
-  /*
-  ** Build configuration
-  */
+  axios: {},
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
+    loaders: {
+      scss: {
+        implementation: require('sass'),
+        sassOptions: {
+          quietDeps: true
+        }
+      }
+    },
+    extend (config, ctx) {}
+  },
+  generate: {
+    fallback: true
   },
   webfontloader: {
     google: {
